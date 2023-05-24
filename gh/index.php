@@ -8,6 +8,14 @@
 
    $site = mysqli_fetch_array(db::query("select * from `site` where id = 2"));
 
+
+
+   $wh_txt1 = 'Сайт бойынша ..';
+   $wh_txt2 = 'Консультацияға жазылу';
+   $wh_txt3 = 'Ұсынысым бар ..';
+   $wh_txt4 = 'Курс жайлы ..';
+   $wh_txt5 = 'НАСТАВНИЧЕСТВО бойынша ..';
+
 ?>
 <? include "../block/header.php"; ?>
 <? unset($_SESSION['loader']); ?>
@@ -69,11 +77,11 @@
                </div>
             </div>
             <div class="lbl1_cb">
-               <a class="btn " href="#">
+               <a class="btn" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=<?=$wh_txt2?>">
                   <span>Консультация алу</span>
                   <div><i class="far fa-long-arrow-right"></i></div>
                </a>
-               <a class="btn btn_cm" href="#">
+               <a class="btn btn_cm" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=<?=$wh_txt4?>">
                   <span>Толығырақ курс жайлы</span>
                   <div><i class="far fa-long-arrow-right"></i></div>
                </a>
@@ -86,31 +94,34 @@
       <div class="bl_c">
          <div class="lbl10_c">
             <div class="lbl10_cm">
-               <a class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Консультация жазылу">
+               <div class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Консультация жазылу">
                   <div class="lbl10_cmle">
                      <div class="lazy_img" data-src="/assets/img/bag/2581.png"></div>
                   </div>
                   <div class="lbl10_cmlb">
                      <div class="lbl10_cmlbh">
-                        <p>Аңызға айналған <span>"Web Pro"</span></p>
-                        <p>сайт әзірлеу курсы</p>
+                        <p>Аңызға айналған </p>
+                        <p><span>"Web Pro"</span> курсы</p>
                      </div>
                      <div class="lbl10_cmlbx">
-                        <p>Освой за 3 месяца профессию</p>
-                        <p>создателя сайтов и зарабатывай</p>
-                        <p><span>на этом от 100 000 ₽ в месяц</span></p>
+                        <p>Небәрі 3 айда "Web-разработчик"</p>
+                        <p>мамандығын үйреніп, айына</p>
+                        <p>650 000 тг-ден жоғары табыс тап</p>
+                        <!-- <p>Освой за 3 месяца профессию</p> -->
+                        <!-- <p>создателя сайтов и зарабатывай</p> -->
+                        <!-- <p><span>на этом от 100 000 ₽ в месяц</span></p> -->
                      </div>
                      <div class="lbl10_cmlbp">
-                        <p>800 выпускников курса</p>
-                        <p>9,7 оценка курса выпускниками</p>
-                        <p>даем каждому первых клиентов</p>
+                        <p>200 түлек сәтті аяқтаған</p>
+                        <p>Түлектер курсқа 9.7 баға берді</p>
+                        <p>Барлығына алғашқы клиентін табуға көмектесеміз</p>
                      </div>
-                     <div class="btn">
-                        <span>Жазылу</span>
+                     <a class="btn" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=<?=$wh_txt4?>">
+                        <span>Толығырақ</span>
                         <div><i class="far fa-long-arrow-right"></i></div>
-                     </div>
+                     </a>
                   </div>
-               </a>
+               </div>
 
                <!-- <a class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Мастер-классқа қатысу">
                   <div class="lbl10_cmle">
@@ -134,32 +145,29 @@
                   </div>
                </a> -->
 
-               <a class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Мастер-классқа қатысу">
+               <div class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Мастер-классқа қатысу">
                   <div class="lbl10_cmle">
                      <div class="lazy_img" data-src="/assets/img/bag/08.png"></div>
                   </div>
                   <div class="lbl10_cmlb">
                      <div class="lbl10_cmlbh">Консультация</div>
                      <div class="lbl10_cmlbx">
-                        <p>Освой за 2 часа базу в создании</p>
-                        <p>сайтов и построй личный план</p>
-                        <p>к заработку в 100 000 ₽</p>
+                        <p>2 сағатта өзіңізге қажет кеңесті</p>
+                        <p>алып, табысыңызды 2-есе артырудың</p>
+                        <p>жеке жоспарын құрыңыз</p>
                      </div>
                      <div class="lbl10_cmlbp">
-                        <p>больше 2000 человек прошли обучающий мастер-класс</p>
-                        <p>в подарок урок по созданию первого сайта</p>
+                        <p>Нақты 50+ компанияның / эксперттің табысын арттырдым</p>
+                        <p>Сыйлыққа: қаражатты ыңғайлы есептейтін құралды алыңыз</p>
                      </div>
-                        <!-- <li>Жеке өзім разбор жасаймын</li>
-                        <li>Трейдинг саласы бойынша 10 жылдық тәжірибеммен бөлісемін</li>
-                        <li>Кеңес алу ұзақтығы 2 сағат</li> -->
-                     <div class="btn">
+                     <a class="btn" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=<?=$wh_txt2?>">
                         <span>Жазылу</span>
                         <div><i class="far fa-long-arrow-right"></i></div>
-                     </div>
+                     </a>
                   </div>
-               </a>
+               </div>
 
-               <a class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Мастер-классқа қатысу">
+               <div class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Мастер-классқа қатысу">
                   <div class="lbl10_cmle">
                      <div class="lazy_img" data-src="/assets/img/bag/08.png"></div>
                   </div>
@@ -169,45 +177,46 @@
                         <p><span>(жеке оқыту)</span></p>
                      </div>
                      <div class="lbl10_cmlbx">
-                        <p>Освой за 2 часа базу в создании</p>
-                        <p>сайтов и построй личный план</p>
-                        <p>к заработку в 100 000 ₽</p>
+                        <p>Менің 8 жылдық біліміді алып,</p>
+                        <p>жеке оқу арқылы табысыңды</p>
+                        <p>1 000 000 тг-ден арттыр</p>
                      </div>
                      <div class="lbl10_cmlbp">
-                        <p>больше 2000 человек прошли обучающий мастер-класс</p>
-                        <p>в подарок урок по созданию первого сайта</p>
+                        <p>1-2 айда толық меңгеріп шығу</p>
+                        <p>IT саласында Middle дәрежесіне бірден көтеріле алу</p>
+                        <p>Қазақстандағы ірі компанияларға жұмысқа кіру мүмкіндігін алу</p>
                      </div>
-                     <div class="btn">
-                        <span>Жазылу</span>
+                     <a class="btn" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=<?=$wh_txt5?>">
+                        <span>Бағасын білу</span>
                         <div><i class="far fa-long-arrow-right"></i></div>
-                     </div>
+                     </a>
                   </div>
-               </a>
+               </div>
 
-               <a class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Мастер-классқа қатысу">
+               <div class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Мастер-классқа қатысу">
                   <div class="lbl10_cmle">
                      <div class="lazy_img" data-src="/assets/img/bag/08.png"></div>
                   </div>
                   <div class="lbl10_cmlb">
                      <div class="lbl10_cmlbh">Сайтқа <span>заказ қабылдау</span></div>
                      <div class="lbl10_cmlbx">
-                        <p>Освой за 2 часа базу в создании</p>
-                        <p>сайтов и построй личный план</p>
-                        <p>к заработку в 100 000 ₽</p>
+                        <p>Сапалы сайттар жасатқыңыз</p>
+                        <p>келсе маған жазыңыз</p>
+                        <!-- <p></p> -->
                      </div>
                      <div class="lbl10_cmlbp">
-                        <p>больше 2000 человек прошли обучающий мастер-класс</p>
-                        <p>в подарок урок по созданию первого сайта</p>
+                        <p>100+ жемісті жобаларым бар</p>
+                        <p>Кез-келген қиындықтағы сайтты жасаймын</p>
+                        <p>Оқу платформасын да тапсырыс бере аласыз</p>
                      </div>
-                     <div class="btn">
-                        <span>Жазылу</span>
+                     <a class="btn" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=<?=$wh_txt1?>">
+                        <span>Тапсырыс беру</span>
                         <div><i class="far fa-long-arrow-right"></i></div>
-                     </div>
+                     </a>
                   </div>
-               </a>
+               </div>
 
-
-               <a class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Курс сатып алғым келеді">
+               <div class="lbl10_cml">
                   <div class="lbl10_cmle">
                      <div class="lazy_img" data-src="/assets/img/bag/kerfin7_nea_2788.png"></div>
                   </div>
@@ -217,40 +226,20 @@
                         <p>пікірлері</p>
                      </div>
                      <div class="lbl10_cmlbx">
-                        <p>Что становится с учениками</p>
-                        <p>нашего курса <span>после выпускного?</span></p>
+                        <p>Оқуды <span>аяқтаған түлектерді</span></p>
+                        <p>не күтіп тұрғанын білгіңіз келе ме?</p>
                      </div>
                      <div class="lbl10_cmlbp">
-                        <p>Кто-то зарабатывает за несколько месяцев на новый макбук</p>
-                        <p>Кто-то начинает сотрудничество с Тинькофф и покупает в 19 лет новую мазду с салона</p>
-                        <p>А кто-то… <br><br> Но лучше читай сам и вдохновляйся</p>
+                        <p>Біршамасы 1-2 айда жаңа macbook сатып алды</p>
+                        <p>Бір түлегіміз 19 жасында су жаңа мото сатып алды</p>
+                        <p>Ал біршамасы.. <br><br> Негізінде өзің оқып, артынан шабыт аларсың</p>
                      </div>
                      <div class="btn">
                         <span>Пікірлерді оқу</span>
                         <div><i class="far fa-long-arrow-right"></i></div>
                      </div>
                   </div>
-               </a>
-
-
-               <!-- <a class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Курс сатып алғым келеді">
-                  <div class="lbl10_cmle">
-                     <div class="lazy_img" data-src="/assets/img/bag/kerfin7_nea_2788.png"></div>
-                  </div>
-                  <div class="lbl10_cmlb">
-                     <div class="lbl10_cmlbh">Курс Trading Pro</div>
-                     <ul class="lbl10_cmlbp">
-                        <li>Курсты 800 адам толық өтіп шықты</li>
-                        <li>2 айлық практикалық курс</li>
-                        <li>Түлектердің курсты бағалауы - 10 на 9.7</li>
-                        <li>Толық практикадан тұратын курс</li>
-                     </ul>
-                     <div class="btn">
-                        <span>Сатып алу</span>
-                        <div><i class="far fa-long-arrow-right"></i></div>
-                     </div>
-                  </div>
-               </a> -->
+               </div>
 
             </div>
          </div>
@@ -263,100 +252,75 @@
             <h4>Әлеуметтік желілер</h4>
          </div>
          <div class="lbl12_c lbl12_c2">
-            <a class="lbl12_c2i" href="https://wa.me/<?=$site['whatsapp']?>">
-               <div class="lbl12_c2iq">
-                  <p>Жеке</p>
-                  <p>инстаграм</p>
-               </div>
-               <div class="btn btn_back btn_back2">
-                  <span>Қарау</span>
-                  <div><i class="far fa-long-arrow-right"></i></div>
-               </div>
-            </a>
-            <a class="lbl12_c2i" href="https://wa.me/<?=$site['whatsapp']?>">
-               <div class="lbl12_c2iq">
-                  <p>Телеграм</p>
-                  <p>канал</p>
-               </div>
-               <div class="btn btn_back btn_back2">
-                  <span>Қарау</span>
-                  <div><i class="far fa-long-arrow-right"></i></div>
-               </div>
-            </a>
-            <a class="lbl12_c2i" href="https://wa.me/<?=$site['whatsapp']?>">
-               <div class="lbl12_c2iq">
-                  <p>Ютуб</p>
-                  <p>канал</p>
-               </div>
-               <div class="btn btn_back btn_back2">
-                  <span>Қарау</span>
-                  <div><i class="far fa-long-arrow-right"></i></div>
-               </div>
-            </a>
-            <a class="lbl12_c2i" href="https://wa.me/<?=$site['whatsapp']?>">
-               <div class="lbl12_c2iq">
-                  <p>Behance-де</p>
-                  <p>кейстер</p>
-               </div>
-               <div class="btn btn_back btn_back2">
-                  <span>Қарау</span>
-                  <div><i class="far fa-long-arrow-right"></i></div>
-               </div>
-            </a>
+            <? if ($site['instagram']): ?>
+               <a class="lbl12_c2i" href="https://instagram.com/<?=$site['instagram']?>">
+                  <div class="lbl12_c2iq">
+                     <p>Жеке</p>
+                     <p>инстаграм</p>
+                  </div>
+                  <div class="btn btn_back btn_back2">
+                     <span>Қарау</span>
+                     <div><i class="far fa-long-arrow-right"></i></div>
+                  </div>
+               </a>
+            <? endif ?>
+            <? if ($site['tiktok']): ?> <? endif ?>
+            <? if ($site['telegram']): ?>
+               <a class="lbl12_c2i" href="https://t.me/<?=$site['telegram']?>">
+                  <div class="lbl12_c2iq">
+                     <p>Телеграм</p>
+                     <p>канал</p>
+                  </div>
+                  <div class="btn btn_back btn_back2">
+                     <span>Қарау</span>
+                     <div><i class="far fa-long-arrow-right"></i></div>
+                  </div>
+               </a>
+            <? endif ?>
+            <? if ($site['youtube']): ?>
+               <a class="lbl12_c2i" href="https://youtube.com/@<?=$site['youtube']?>">
+                  <div class="lbl12_c2iq">
+                     <p>Ютуб</p>
+                     <p>канал</p>
+                  </div>
+                  <div class="btn btn_back btn_back2">
+                     <span>Қарау</span>
+                     <div><i class="far fa-long-arrow-right"></i></div>
+                  </div>
+               </a>
+            <? endif ?>
+            <? if ($site['behance']): ?>
+               <a class="lbl12_c2i" href="https://behance.net/<?=$site['behance']?>">
+                  <div class="lbl12_c2iq">
+                     <p>Behance-де</p>
+                     <p>кейстер</p>
+                  </div>
+                  <div class="btn btn_back btn_back2">
+                     <span>Қарау</span>
+                     <div><i class="far fa-long-arrow-right"></i></div>
+                  </div>
+               </a>
+            <? endif ?>
          </div>
       </div>
    </div>
-   <!-- <div class="lbl1_cb" id="top2">
-      <div class="lbl1_cbc">
-      <? if ($site['instagram']): ?>
-            <a href="https://instagram.com/<?=$site['instagram']?>">
-               <i class="fab fa-instagram"></i>
-               <span>Instagram</span>
-            </a>
-         <? endif ?>
-         <? if ($site['tiktok']): ?>
-            <a href="https://tiktok.com/<?=$site['tiktok']?>">
-               <div class="lazy_img" data-src="/assets/img/icons/Tiktok-icon-on-transparent-background-PNG.png"></div>
-               <span>Tik-Tok</span>
-            </a>
-         <? endif ?>
-         <? if ($site['youtube']): ?>
-            <a href="https://youtube.com/@<?=$site['youtube']?>">
-               <i class="fab fa-youtube"></i>
-               <span>YouTube</span>
-            </a>
-         <? endif ?>
-         <? if ($site['telegram']): ?>
-            <a href="https://t.me/<?=$site['telegram']?>">
-               <i class="fab fa-telegram"></i>
-               <span>Telegram</span>
-            </a>
-         <? endif ?>
-      </div>
-      <div class="lbl1_cbs">
-         <i class="fal fa-info-circle"></i>
-         <span>Әлеуметтік желіме жазылуды ұмытпаңыз</span>
-      </div>
-   </div> -->
 
-
-
-
+   <!--  -->
    <div class="lbl12">
       <div class="bl_c">
          <div class="head_c">
             <h4>Байланысу желісі</h4>
          </div>
          <div class="lbl12_c">
-            <a href="https://wa.me/<?=$site['whatsapp']?>" class="btn">
+            <div href="#" class="btn">
                <span>Кері байланыс</span>
                <div><i class="far fa-long-arrow-right"></i></div>
-            </a>
+            </div>
             <a href="https://wa.me/<?=$site['whatsapp']?>" class="btn btn_whatsapp btn_none">
                <span>Whatsapp-ма жазу</span>
                <div><i class="fab fa-whatsapp"></i></div>
             </a>
-            <a href="https://wa.me/<?=$site['whatsapp']?>" class="btn btn_telegram btn_none">
+            <a href="https://t.me/<?=$site['telegram']?>" class="btn btn_telegram btn_none">
                <span>Telegram-ма жазу</span>
                <div><i class="fab fa-telegram-plane"></i></div>
             </a>
@@ -367,9 +331,6 @@
          </div>
       </div>
    </div>
-
-
-
    
    <!-- -->
    <div class="lbl10">
@@ -388,25 +349,23 @@
                         <p><span>Жеке өзіме</span> сайтқа</p>
                         <p>тапсырыс беру</p>
                      </div>
-                     <div class="lbl10_cmlbx">
+                     <!-- <div class="lbl10_cmlbx">
                         <p>Освой за 3 месяца профессию</p>
                         <p>создателя сайтов и зарабатывай</p>
                         <p><span>на этом от 100 000 ₽ в месяц</span></p>
-                     </div>
-                     <div class="lbl10_cmlbp">
-                        <p>800 выпускников курса</p>
-                        <p>9,7 оценка курса выпускниками</p>
-                        <p>даем каждому первых клиентов</p>
-                     </div>
+                     </div> -->
+                     <!-- <div class="lbl10_cmlbp">
+                        <p></p>
+                     </div> -->
                      <div class="btn">
                         <span>Өтініш қалдыру</span>
                         <div><i class="far fa-long-arrow-right"></i></div>
                      </div>
-                     <a class="btn btn_back" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Консультация жазылу">Жылдам байланысу</a>
+                     <a class="btn btn_back" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=<?=$wh_txt1?>">Жылдам байланысу</a>
                   </div>
                </div>
 
-               <div class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Мастер-классқа қатысу">
+               <div class="lbl10_cml">
                   <div class="lbl10_cmle">
                      <div class="lazy_img" data-src="/assets/img/bag/08.png"></div>
                   </div>
@@ -415,24 +374,23 @@
                         <p><span>Менің шәкірттеріме</span></p>
                         <p>сайт жасату</p>
                      </div>
-                     <div class="lbl10_cmlbx">
+                     <!-- <div class="lbl10_cmlbx">
                         <p>Освой за 2 часа базу в создании</p>
                         <p>сайтов и построй личный план</p>
                         <p>к заработку в 100 000 ₽</p>
-                     </div>
-                     <div class="lbl10_cmlbp">
-                        <p>больше 2000 человек прошли обучающий мастер-класс</p>
-                        <p>в подарок урок по созданию первого сайта</p>
-                     </div>
+                     </div> -->
+                     <!-- <div class="lbl10_cmlbp">
+                        <p></p>
+                     </div> -->
                      <div class="btn">
                         <span>Өтініш қалдыру</span>
                         <div><i class="far fa-long-arrow-right"></i></div>
                      </div>
-                     <a class="btn btn_back" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Консультация жазылу">Жылдам байланысу</a>
+                     <a class="btn btn_back" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=<?=$wh_txt1?>">Жылдам байланысу</a>
                   </div>
                </div>
 
-               <div class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Курс сатып алғым келеді">
+               <div class="lbl10_cml">
                   <div class="lbl10_cmle">
                      <div class="lazy_img" data-src="/assets/img/bag/kerfin7_nea_2788.png"></div>
                   </div>
@@ -441,24 +399,23 @@
                         <p><span>Оку платформасын</span></p>
                         <p>жасауға тапсырыс беру</p>
                      </div>
-                     <div class="lbl10_cmlbx">
-                        <p>Что становится с учениками</p>
-                        <p>нашего курса <span>после выпускного?</span></p>
-                     </div>
-                     <div class="lbl10_cmlbp">
-                        <p>Кто-то зарабатывает за несколько месяцев на новый макбук</p>
-                        <p>Кто-то начинает сотрудничество с Тинькофф и покупает в 19 лет новую мазду с салона</p>
-                        <p>А кто-то… <br><br> Но лучше читай сам и вдохновляйся</p>
-                     </div>
+                     <!-- <div class="lbl10_cmlbx">
+                        <p>Освой за 2 часа базу в создании</p>
+                        <p>сайтов и построй личный план</p>
+                        <p>к заработку в 100 000 ₽</p>
+                     </div> -->
+                     <!-- <div class="lbl10_cmlbp">
+                        <p></p>
+                     </div> -->
                      <div class="btn">
                         <span>Өтініш қалдыру</span>
                         <div><i class="far fa-long-arrow-right"></i></div>
                      </div>
-                     <a class="btn btn_back" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Консультация жазылу">Жылдам байланысу</a>
+                     <a class="btn btn_back" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=<?=$wh_txt1?>">Жылдам байланысу</a>
                   </div>
                </div>
 
-               <div class="lbl10_cml" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Консультация жазылу">
+               <div class="lbl10_cml">
                   <div class="lbl10_cmle">
                      <div class="lazy_img" data-src="/assets/img/bag/2581.png"></div>
                   </div>
@@ -467,28 +424,26 @@
                         <p><span>Мобильді қосымша</span></p>
                         <p>тапсырыс беру</p>
                      </div>
-                     <div class="lbl10_cmlbx">
-                        <p>Освой за 3 месяца профессию</p>
-                        <p>создателя сайтов и зарабатывай</p>
-                        <p><span>на этом от 100 000 ₽ в месяц</span></p>
-                     </div>
-                     <div class="lbl10_cmlbp">
-                        <p>800 выпускников курса</p>
-                        <p>9,7 оценка курса выпускниками</p>
-                        <p>даем каждому первых клиентов</p>
-                     </div>
+                     <!-- <div class="lbl10_cmlbx">
+                        <p>Освой за 2 часа базу в создании</p>
+                        <p>сайтов и построй личный план</p>
+                        <p>к заработку в 100 000 ₽</p>
+                     </div> -->
+                     <!-- <div class="lbl10_cmlbp">
+                        <p></p>
+                     </div> -->
                      <div class="btn">
                         <span>Өтініш қалдыру</span>
                         <div><i class="far fa-long-arrow-right"></i></div>
                      </div>
-                     <a class="btn btn_back" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=Консультация жазылу">Жылдам байланысу</a>
+                     <a class="btn btn_back" target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=<?=$wh_txt1?>">Жылдам байланысу</a>
                   </div>
                </div>
 
             </div>
 
             <div class="lbl12_c">
-               <a href="https://wa.me/<?=$site['whatsapp']?>" class="btn btn_whatsapp btn_none">
+               <a href="https://wa.me/<?=$site['whatsapp']?>?text=<?=$wh_txt3?>" class="btn btn_whatsapp btn_none">
                   <span>Басқа ұсынысым бар</span>
                   <div><i class="fab fa-whatsapp"></i></div>
                </a>
@@ -505,7 +460,7 @@
    <footer class="footer">
       <div class="bl_c">
          <div class="footer_b">
-            <div><a href="/about/privacy">Privacy Policy</a></div>
+            <div><a href="#/about/privacy">Privacy Policy</a></div>
             <div>G prog</div>
          </div>
       </div>

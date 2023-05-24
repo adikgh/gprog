@@ -111,7 +111,16 @@ body{
    font-family: 'Danger Neue', Arial, sans-serif;
    font-weight: normal;
 }
-
+@media (max-width: 414px) {
+   .head_c h4{
+      font-size: 30px;
+   }
+}
+@media (max-width: 375px) {
+   .head_c h4{
+      font-size: 28px;
+   }
+}
 
 
 
@@ -271,7 +280,27 @@ body{
 }
 @media (max-width: 414px) {
    .lbl1_cm h1{
-      font-size: 24px;
+      font-size: 38px;
+   }
+}
+@media (max-width: 390px) {
+   .lbl1_cm h1{
+      font-size: 36px;
+   }
+}
+@media (max-width: 375px) {
+   .lbl1_cm h1{
+      font-size: 34px;
+   }
+}
+@media (max-width: 360px) {
+   .lbl1_cm h1{
+      font-size: 32px;
+   }
+}
+@media (max-width: 320px) {
+   .lbl1_cm h1{
+      font-size: 30px;
    }
 }
 
@@ -297,8 +326,8 @@ body{
 }
 .lbl1_cyi i{
    font-size: 16px;
-   margin-right: 15px;
-   margin-top: 4px;
+   margin-right: 12px;
+   margin-top: 5px;
 }
 .lbl1_cyi div{
    font-size: 18px;
@@ -306,7 +335,15 @@ body{
 .lbl1_cyi span{
    font-weight: 600;
 }
-
+@media (max-width: 375px) {
+   .lbl1_cyi i{
+      font-size: 14px;
+      margin-right: 11px;
+   }
+   .lbl1_cyi div{
+      font-size: 16px;
+   }
+}
 
 
 
@@ -701,7 +738,6 @@ body{
    position: relative;
    width: 100%;
    border-radius: 20px;
-   cursor: pointer;
    transition: .3s;
    background: var(--wh);
    display: block;
@@ -751,14 +787,23 @@ body{
    text-transform: uppercase;
 }
 .lbl10_cmlbh p{}
-.lbl10_cmlbh p:last-child{
-   padding-left: 40px;
+.lbl10_cmlbh p:last-child{padding-left:40px}
+.lbl10_cmlbh p:first-child{padding-left:0}
+.lbl10_cmlbh span{color:var(--cm)}
+@media (max-width: 428px) {
+   .lbl10_cmlbh, .lbl10_cmlbh p{
+      font-size: 20px;
+   }
 }
-.lbl10_cmlbh p:first-child{
-   padding-left: 0;
+@media (max-width: 390px) {
+   .lbl10_cmlbh, .lbl10_cmlbh p{
+      font-size: 20px;
+   }
 }
-.lbl10_cmlbh span{
-   color: var(--cm);
+@media (max-width: 375px) {
+   .lbl10_cmlbh, .lbl10_cmlbh p{
+      font-size: 18px;
+   }
 }
 
 
@@ -775,7 +820,11 @@ body{
 .lbl10_cmlbx span{
    font-weight: 600;
 }
-
+@media (max-width: 375px) {
+   .lbl10_cmlbx p{
+      font-size: 16px;
+   }
+}
 
 
 .lbl10_cmlbp{
@@ -811,12 +860,17 @@ body{
    border-bottom-right-radius: 0;
    margin-left: calc(25% + 25px);
 }
+@media (max-width: 375px) {
+   .lbl10_cmlbp p{
+      font-size: 14px;
+   }
+}
+
 
 .lbl10_cml .btn{
    width: 100%;
    margin-top: 30px;
 }
-
 
 
 .lbl10_cb .btn{
@@ -881,6 +935,17 @@ body{
    font-family: 'Danger Neue', Arial, sans-serif;
    font-weight: normal;
 }
+@media (max-width: 414px) {
+   .lbl12_c2iq p{
+      font-size: 26px;
+   }
+}
+@media (max-width: 375px) {
+   .lbl12_c2iq p{
+      font-size: 24px;
+   }
+}
+
 .lbl12_c2i:first-child .lbl12_c2iq p:last-child{
    color: #F0BE73;
    /* background: linear-gradient(267.8deg, #EC7E4A 6.03%, #F2B442 99.54%); */
