@@ -24,7 +24,7 @@
 
 
    // setting
-   $ver = 1.44;
+   $ver = 1.45;
    $site_set = [
       'header' => true,
       'menu' => true,
