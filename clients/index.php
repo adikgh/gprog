@@ -25,7 +25,10 @@
                      <div class="clients_icn">
                         <h3><?=$client_d['name_ru']?></h3>
                         <p><?=$client_d['disc_ru']?></p>
-                        <a class="btn btn_back" href="">Официальный сайт </a>
+                        <a class="btn btn_back" href="">
+                           <span>Официальный сайт</span>
+                           <i class="fal fa-long-arrow-right"></i>
+                        </a>
                      </div>
                      <div class="clients_icm">
                         <div class="lazy_img" data-src="/assets/img/clients/<?=$client_d['logo']?>"></div>

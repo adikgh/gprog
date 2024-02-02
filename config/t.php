@@ -7,21 +7,21 @@ class t {
 	// word
 	public static function w($l) {
 		$sql = mysqli_fetch_array(db::query("select * from `word` where txt = '$l'"));
-		if (isset($_SESSION['lang'])) $lang = $_SESSION['lang']; else $lang = 'ru';
+		if (isset($_SESSION['lang'])) $lang = $_SESSION['lang']; else $lang = 'kz';
 		return $sql['txt_'.$lang];
 	}
 
 	// word block
 	public static function wb($l) {
 		$sql = mysqli_fetch_array(db::query("select * from `word_block` where txt = '$l'"));
-		if (isset($_SESSION['lang'])) $lang = $_SESSION['lang']; else $lang = 'ru';
+		if (isset($_SESSION['lang'])) $lang = $_SESSION['lang']; else $lang = 'kz';
 		return $sql['txt_'.$lang];
 	}
 
 	// 
 	public static function info($id) {
 		$sql = mysqli_fetch_array(db::query("select * from `info` where id = '$id'"));
-		if (isset($_SESSION['lang'])) $lang = $_SESSION['lang']; else $lang = 'ru';
+		if (isset($_SESSION['lang'])) $lang = $_SESSION['lang']; else $lang = 'kz';
 		return $sql['name_'.$lang];
 	}
     

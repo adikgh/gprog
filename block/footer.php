@@ -1,11 +1,11 @@
 	<!-- body end -->
 	</div>
 
-	<? if ($site_set['footer'] == true): ?>
+	<? if ($site_set['footer']): ?>
 		<!-- footer start -->
 		<footer class="footer">
 			<div class="bl_c">
-				<? if ($site_set['footer_c'] == true): ?>
+				<? if ($site_set['footer_c']): ?>
 					<div class="foot_c">
 						<div class="foot_ct">
 							<div class="foot_cti">
@@ -26,11 +26,11 @@
 						</div>
 						<div class="foot_cb">
 							<div class="foot_sos">
+								<? $sn = db::query("select * from site_sn where main is not null ORDER BY `site_sn`.`type` ASC, `site_sn`.`number` ASC"); ?>
+								<? while ($sn_d = mysqli_fetch_array($sn)): ?>
+									<a target="_blank" href="<?=$sn_d['link'].$sn_d['main']?>"><?=$sn_d['icon']?></a>
+								<? endwhile ?>
 								<!-- <a target="_blank" href="https://wa.me/<?=$site['whatsapp']?>"><i class="fab fa-whatsapp"></i></a> -->
-								<a target="_blank" href="https://www.instagram.com/<?=$site['instagram']?>"><i class="fab fa-instagram"></i></a>
-								<a target="_blank" href="#"><i class="fab fa-youtube"></i></a>
-								<a target="_blank" href="#"><i class="fab fa-telegram"></i></a>
-								<a target="_blank" href="#"><i class="fab fa-behance"></i></a>
 							</div>
 						</div>
 					</div>

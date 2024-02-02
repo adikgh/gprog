@@ -422,7 +422,6 @@ smail{font-size:11px}
 }
 
 
-
 /*  */
 .btn_cl{
 	min-height: 44px;
@@ -470,18 +469,13 @@ smail{font-size:11px}
 
 /* btn in */
 .btn_dd2{
-	position: relative;
-	width: 20px;
-	height: 20px;
-	margin-right: 10px;
 	border-radius: 50%;
-	background: var(--cl);
-	color: var(--wh);
+	transform: rotate(-45deg);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.btn_dd2 i{font-size:8px}
+/* .btn_dd2 i{font-size:8px} */
 
 .btn_dd2_phone{padding-left:1px}
 .btn_dd2_phone i{margin-top:-1px}

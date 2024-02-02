@@ -3,6 +3,7 @@
    require 'db.php';
    require 'fun.php';
    require 't.php';
+   require 'var.php';
 
    class core {
       public function __construct() {
@@ -24,12 +25,12 @@
 
 
    // setting
-   $ver = 1.45;
-   $site_set = [
-      'header' => true,
-      'menu' => true,
-      'footer' => true,
-      'footer_c' => true,
-   ];
-   $css = [];
-   $js = [];
+   // $ver = 1.45;
+   // $site_set = [
+   //    'header' => true,
+   //    'menu' => true,
+   //    'footer' => true,
+   //    'footer_c' => true,
+   // ];
+   // $css = [];
+   // $js = [];

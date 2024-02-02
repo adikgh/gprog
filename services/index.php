@@ -18,7 +18,7 @@
 					<p>#gprog существует для того, чтобы сделать доступными все самые современные инструменты продвижения и развития вашего бизнеса</p>
 				</div>
 				<div class="services_tc">
-					<? $services_c = db::query("select * from services_category"); ?>
+					<? $services_c = db::query("select * from services_category where sell = 1 order by number asc"); ?>
 					<? while ($services_cd = mysqli_fetch_array($services_c)): ?>
 						<? $category_id = $services_cd['id']; ?>
 						<a class="services_ti" href="#<?=$services_cd['name']?>">
@@ -26,13 +26,14 @@
 								<h2><?=$services_cd['names_ru']?></h2>
 								<p>production</p>
 							</div>
+							<div class="services_tici lazy_img" data-src="/assets/img/icons/<?=$services_cd['img']?>"></div>
 						</a>
 					<? endwhile ?>
 				</div>
 			</div>
 
 			<div class="services_c">
-				<? $services_c = db::query("select * from services_category"); ?>
+				<? $services_c = db::query("select * from services_category where sell = 1 order by number asc"); ?>
 				<? while ($services_cd = mysqli_fetch_array($services_c)): ?>
 					<? $category_id = $services_cd['id']; ?>
 					
@@ -46,8 +47,10 @@
 						<? while ($services_d = mysqli_fetch_array($services)): ?>
 							<a class="services_it_i" href="<?=$services_d['url']?>">
 								<div class="services_it_ic">
-									<p><?=$services_d['disc_ru']?></p>
 									<div><?=$services_d['name_ru']?></div>
+									<? if ($services_d['disc_ru']): ?>
+										<p><?=$services_d['disc_ru']?></p>
+									<? endif ?>
 								</div>
 								<div class="services_it_img lazy_img" data-src="/assets/img/services/<?=$services_d['img']?>"></div>
 							</a>

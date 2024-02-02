@@ -1,4 +1,4 @@
-<? if ($site_set['header'] == true): ?>
+<? if ($site_set['header']): ?>
 	<!-- header -->
 	<div class="header <?=($site_set['menu']=='bl'?'header_bl':'')?>">
 		<div class="bl_c">

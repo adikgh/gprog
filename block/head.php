@@ -1,4 +1,4 @@
-<? $menu = mysqli_fetch_array(db::query("select * from `menu` where name = '$menu_name'")); ?>
+<? $menu = mysqli_fetch_array(db::query("select * from `site_menu` where name = '$menu_name'")); ?>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +52,6 @@
 
 
 <? if ($site['metrika'] != null): ?>
-	<!-- Yandex.Metrika counter -->
 	<script type='text/javascript'>
 		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
@@ -62,7 +61,6 @@
 <? endif ?>
 
 <? if ($site['analitics'] != null): ?>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168445294-3"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -73,7 +71,6 @@
 <? endif ?>
 
 <? if ($site['pixel'] != null): ?>
-	<!-- Facebook Pixel Code -->
 	<script>
 	!function(f,b,e,v,n,t,s)
 	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?

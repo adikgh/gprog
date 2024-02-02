@@ -31,7 +31,7 @@
                <? $case_id = $case_d['id']; ?>
                <? $client_d = fun::clients($case_d['client_id']); ?>
                <? $service_d = fun::services($case_d['service_id']); ?>
-               <a class="case_ti" href="#<?=$case_d['name']?>">
+               <a class="case_ti" href="#<?=@$case_d['name']?>">
                   <div class="case_tic">
                      <p><?=$service_d['names_ru']?></p>
                      <div><?=$client_d['name_ru']?></div>
