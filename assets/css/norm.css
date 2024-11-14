@@ -6,6 +6,7 @@
 	/* color norm */
 	--bag: #f9f9f9;
 	--red: #B90000;
+	--blue: #006eff;
 	--whatsapp: #25D366;
 
 	/* transparent */
@@ -191,7 +192,10 @@ smail{font-size:11px}
 .txt_tu{text-transform:uppercase}
 
 
+.cl_cl{color: var(--cl) !important}
+.cl_cm{color: var(--cm) !important}
 .cl_red{color: var(--red) !important}
+.cl_blue{color: var(--blue) !important}
 
 
 .mb80{margin-bottom:80px}
@@ -251,7 +255,7 @@ smail{font-size:11px}
 	position: relative;
 	z-index: 11;
 	width: 100%;
-	max-width: 1024px;
+	max-width: 1184px;
 	padding: 0 40px;
 	margin: auto;
 }
@@ -326,6 +330,39 @@ smail{font-size:11px}
 	}
 }
 
+
+
+/* design 2 */
+.head_c2{
+	padding-top: 120px;
+}
+.head_c2 h2{}
+.head_c2 p{
+	color: var(--bl7);
+}
+.head_c2_icon{
+	width: 64px;
+	height: 64px;
+	margin: 0 auto 20px auto;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+/*  */
+br.desktop{
+}
+br.mobile {
+    display: none;
+}
 
 
 

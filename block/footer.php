@@ -36,8 +36,8 @@
 					</div>
 				<? endif ?>
 				<div class="footer_b">
-					<div><a href="/about/privacy">Privacy Policy</a></div>
-					<div>© 2018-2023, G prog</div>
+					<div><a href="#/about/privacy">Privacy Policy</a></div>
+					<div>© 2018-2024, G prog</div>
 				</div>
 			</div>
 		</footer>

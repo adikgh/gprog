@@ -20,7 +20,7 @@
 
    // lang
    $lang = 'ru';
-   if (isset($_GET['lang'])) if ($_GET['lang'] == 'kz' || $_GET['lang'] == 'ru') $_SESSION['lang'] = $_GET['lang'];
+   if (isset($_GET['lang'])) if ($_GET['lang'] == 'ru' || $_GET['lang'] == 'kz') $_SESSION['lang'] = $_GET['lang'];
    if (isset($_SESSION['lang'])) $lang = $_SESSION['lang'];
 
 

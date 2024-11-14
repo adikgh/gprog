@@ -3,9 +3,13 @@
 	// bot
 	// https://api.telegram.org/bot1252975811:AAEdiqS2l5vN7r6cULWGDF8VNf7QgRowrQQ/getUpdates
 	// https://api.telegram.org/bot1921836439:AAHlW8tYIwG_5yqCVFI_zNcdZJGuERSA6Xo/getUpdates
+	// https://api.telegram.org/bot1252975811:AAH7hfQBmKs27U1y5MLzpf2ASQMj72_-f5A/getUpdates
 		
-	$token = "1252975811:AAEdiqS2l5vN7r6cULWGDF8VNf7QgRowrQQ";
+	$token = "1252975811:AAH7hfQBmKs27U1y5MLzpf2ASQMj72_-f5A";
 	$chat_id = "-534316451";
+	$chat_id = "-4510443798";
+
+	$txt = '';
 
 	if(isset($_GET['mess'])) {
 		$name  = strip_tags($_POST['name']);
@@ -14,7 +18,7 @@
 		$phone = substr_replace($phone, '8', 0, 1);
 
 		$arr = array(
-			'Типі: '			=> 'Консультация 1',
+			'Типі: '		=> 'Консультация 1',
 			'Аты-жөні: '	=> $name,
 			'Телефон: ' 	=> $phone
 		);

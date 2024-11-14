@@ -144,12 +144,14 @@ $(document).ready(function() {
 				mess('Введите свой данный')
 			} else {
 				$.ajax({
-					url: "/send/?mess",
+					url: "/config/send.php?mess",
 					type: "POST",
 					dataType: "html",
 					data: ({name: name.val(), phone: phone.val()}),
+					beforeSend: function(){ mess('Отправка..') },
+					error: function(data){ mess('Ошибка..') },
 					success: function(data){
-						if (data == 'yes') { 
+						if (data == 'yes') {
 							mess('Успешно отправлено')
 							phone.val('')
 							phone.attr('data-pr', 0)
@@ -160,14 +162,14 @@ $(document).ready(function() {
 							mess('Пожалуйста, перезагрузите сайт <br>и попробуйте еще раз')
 						}
 					},
-					beforeSend: function(){ mess('Отправка..') },
-					error: function(data){ mess('Ошибка..') }
 				})
 			}
 		})
 
 
-   // 
+
+
+ 	// 
 	$('.disb_zab').click(function(){
 		$('.fr').addClass('pop_bl_act');
 		$('#html').addClass('ovr_h');

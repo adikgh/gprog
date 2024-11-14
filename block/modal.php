@@ -11,7 +11,7 @@
 <div class="bl_mess"><div class="bl_mess_sam"></div></div>
 
 
-<? if ($site_set['form'] != 'false'): ?>
+<? if ($site_set['form']): ?>
 	<!-- block form -->
 	<div class="pop_bl fr">
 		<div class="pop_bl_a zabr_back"></div>
@@ -26,7 +26,7 @@
 					<div class="form_icon"><i class="far fa-user"></i></div>
 				</div>
 				<div class="form_im">
-					<input type="tel" class="form_im_txt phone ms_phone" placeholder="+7 (___) ___-__-__">
+					<input type="tel" class="form_im_txt phone ms_phone" placeholder="8 (___) ___-__-__">
 					<div class="form_icon"><i class="far fa-phone-alt"></i></div>
 				</div>
 				<div class="form_im form_im_bn">
