@@ -17,9 +17,9 @@
 			<div class="bl_c">
 				<div class="pack_b1_c">
 					<div class="pack_b1_l">
-						<h1 class="pack_b1_h">Разработка сайтов для <br> малый и крупный бизнес</h1>
+						<h1 class="pack_b1_h">Разработка сайтов для <br class="desktop"> малый и крупный бизнес</h1>
 						<div class="pack_b1_lt">
-							<h6 class="pack_b1_h2">От быстрых запусков на Tilda до крупных порталов, банков и интернет-магазинов. Полная поддержка сайта и его дальнейшее продвижение. За плечами 8-летний опыт и свыше 100 сайтов разной сложности.</h6>
+							<h6 class="pack_b1_h2">От быстрых запусков на Tilda до крупных порталов, банков и интернет-магазинов. <br class="desktop"> Полная поддержка сайта и его дальнейшее продвижение. За плечами 6-летний опыт <br class="desktop"> и свыше 100 сайтов разной сложности.</h6>
 							<div class="btn disb_zab"><?=t::w('To get the consultation')?></div>
 						</div>
 					</div>
@@ -141,7 +141,7 @@
 					</div>
 				</div>
 				<div class="blweb5_b">
-					<div class="btn">
+					<div class="btn disb_zab">
 						<i class="far fa-paper-plane"></i>
 						<span>Оставить заявку</span>
 					</div>
@@ -268,7 +268,7 @@
 				<div class="head_c head_c2 txt_c">
 					<div class="head_c2_icon lazy_img" data-src="/assets/img/icons/rocket_1f680.png"></div>
 					<h2 class="">Вот что мы делаем</h2>
-					<p class="">Наше портфолио насчитывает более 350 сайтов из разных областей <br class="desktop"> деятельности. Вот некоторые из них.</p>
+					<p class="">Наше портфолио насчитывает более 100 сайтов из разных областей <br class="desktop"> деятельности. Вот некоторые из них.</p>
 				</div>
 
 				<div class="blweb8_c">

@@ -6,7 +6,7 @@
    // if (isset($_SESSION['lang'])) $lang = $_SESSION['lang'];
 
    // 
-   $ver = 1.101;
+   $ver = 2.021;
 
    // date - time
    $date = date("Y-m-d", time());

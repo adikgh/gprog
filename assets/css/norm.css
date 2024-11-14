@@ -171,12 +171,12 @@ ul, li{list-style: none;}
 /* text */
 h1, h2{font-weight:700}
 h3, h4, h5, h6{font-weight:500}
-h1{font-size:42px}@media(max-width:480px){h1{font-size:30px}}
-h2{font-size:38px}@media(max-width:480px){h2{font-size:28px}}
-h3{font-size:32px}@media(max-width:480px){h3{font-size:24px}}
-h4{font-size:28px}@media(max-width:480px){h4{font-size:22px}}
-h5{font-size:24px}@media(max-width:480px){h5{font-size:18px}}
-h6{font-size:18px}@media(max-width:480px){h6{font-size:16px}}
+h1{font-size:42px}@media(max-width:500px){h1{font-size:30px}}
+h2{font-size:38px}@media(max-width:500px){h2{font-size:28px}}
+h3{font-size:32px}@media(max-width:500px){h3{font-size:24px}}
+h4{font-size:28px}@media(max-width:500px){h4{font-size:22px}}
+h5{font-size:24px}@media(max-width:500px){h5{font-size:18px}}
+h6{font-size:18px}@media(max-width:500px){h6{font-size:16px}}
 p{font-size:16px}
 smail{font-size:11px}
 
@@ -187,7 +187,7 @@ smail{font-size:11px}
 .dsp_b{display:block !important}
 
 .txt_l{text-align:left}
-.txt_c{text-align:center}
+.txt_c{text-align:center !important}
 .txt_r{text-align:right}
 .txt_tu{text-transform:uppercase}
 
@@ -301,7 +301,7 @@ smail{font-size:11px}
 	color: var(--bl7);
 	font-weight: 400;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 	.head_c1 h6, .head_c1 p{
 		padding-left: 30px;
 		font-size: 14px;
@@ -322,7 +322,7 @@ smail{font-size:11px}
 	width: 30px;
 	background: var(--cl);
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 	.head_c1 h6::after, .head_c1 p::after{
 		top: 5px;
 		height: calc(100% - 10px);
@@ -360,8 +360,16 @@ smail{font-size:11px}
 /*  */
 br.desktop{
 }
-br.mobile {
+br.mobile{
     display: none;
+}
+@media (max-width: 500px) {
+	br.mobile{
+		display: inline-block;
+	}
+	br.desktop{
+		display: none;
+	}
 }
 
 
@@ -1064,8 +1072,8 @@ textarea.form_im_txt{
 /*  */
 .pop_bl_c{
 	position: relative;
-	width: 480px;
-	max-width: 480px;
+	width: 500px;
+	max-width: 500px;
 	padding: 45px;
 	border-radius: 20px;
 	z-index: 2;
@@ -1091,7 +1099,7 @@ textarea.form_im_txt{
 	background: var(--bl1);
 	display: none;
 }
-@media(max-width:480px){.pop_bl_c::after{display:block}}
+@media(max-width:500px){.pop_bl_c::after{display:block}}
 
 
 
@@ -1177,7 +1185,7 @@ textarea.form_im_txt{
 	padding: 60px 0;
 	padding-top: 120px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 	.form_pol{
 		padding-top: 60px;
 	}
@@ -1201,7 +1209,7 @@ textarea.form_im_txt{
 		height: 300px;
 	}
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 	.form_pola{
 		margin-bottom: -120px;
 	}
@@ -1242,7 +1250,7 @@ textarea.form_im_txt{
 	left: 160px;
 	border-radius: 38% 62% 43% 57% / 36% 35% 65% 64%;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 	.form_pola::after, .form_pola::before{
 		left: 0;
 	}
@@ -1268,7 +1276,7 @@ textarea.form_im_txt{
 		background: var(--wh9);
 	}
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 	.form_pol_c{
 		padding: 30px 15px;
 	}
@@ -1313,7 +1321,7 @@ textarea.form_im_txt{
 	justify-content: center;
 }
 .form_pol_con .form_im input{
-	max-width: 480px;
+	max-width: 500px;
 }
 .form_pol_con .form_im .btn{
 	width: 425px;
@@ -1326,60 +1334,134 @@ textarea.form_im_txt{
 
 
 
-/* phone */
-.callback-bt{
-	position: fixed;
-	right: 30px;
-	bottom: 30px;
-	height: 74px;
-	width: 74px;
-	z-index: 900;
-	background: #25D366;
-	box-shadow: 0 0 0 0em var(--trb), 0em 0.05em 0.1em var(--trb);
-	box-shadow: var(--bx_b3), inset var(--bx_t2);
-	border: 1px solid #25D366;
-	border-radius: 50%;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: var(--tm);
-	font-size: 32px;
-	color:var(--wh);
-	transform: translate3d(0, 0, 0) scale(1);
-   animation: phone-outer 3000ms infinite;
-}
-@media (max-width: 768px) {
-	.callback-bt{
-		width: 54px;
-		height: 54px;
-		right: 15px;
-		bottom: 15px;
-		font-size: 24px;
+/*  */
+.callback{}
+@media(max-width:500px){
+	.callback{
+		position: fixed;
+		bottom: -74px;
+		left: 0;
+		width: 100%;
+		height: 188px;
+		transform: translateY(70px);
+		padding-bottom: 144px;
+		z-index: 999;
+		transition: .4s;
+		-webkit-overflow-scrolling: touch;
+		background: var(--bag);
+		box-shadow: var(--bx_t2);
+	}
+	/* .tabs_act, .tabs_acts{bottom:-74px} */
+
+	.callback a{
+		position: absolute;
+		display: block;
+		left: 0;
+		top: 0;
+		width: 50%;
+		height: 44px;
+	}
+	.callback a:last-child{
+		left: auto;
+		right: 0;
 	}
 }
 
-.callback-bt:hover{
-	background: var(--wh);
-	color: #25D366;
+
+.callback-bt, .callback-btw{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	height: 72px;
+	width: 72px;
+	z-index: 9999;
+
+	background:var(--cl);
+	box-shadow:var(--bx3);
+	border:1px solid var(--cl);
+	border-radius:50%;
+	transition:.3s;
+	cursor:pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	animation:hoverWave linear 1s infinite;
 }
-.callback-bt::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border-radius: 100%;
-	background-color: var(--wh1);
-	opacity: 1;
-	transform: translate3d(0,0,0) scale(0);
-   animation: phone-inner 3000ms infinite;
+.callback-bt{display:none}
+.callback-btw{
+	background:#25D366;
+	border: 0;
+	box-shadow: var(--bx_b2);
 }
-.callback-bt i{
-	transform: translate3d(0,0,0);
-   animation: phone-icon 3000ms infinite;
+.callback-bt:hover, .callback-btw:hover{
+	background:#fff;
+	transition:.3s;
 }
+@media(max-width:500px){
+	.callback-bt, .callback-btw{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		bottom: auto;
+		right: auto;
+		display: flex;
+
+		animation: none;
+		border-radius: 0;
+	}
+	.callback-bt{
+		background: var(--cm);
+		border:1px solid var(--cm);
+	}
+	.callback-bt:hover{
+		background: var(--cm7);
+	}
+	.callback-btw:hover{
+		background:#25D366;
+	}
+}
+
+
+
+
+.callback-bt i, .callback-btw i{
+	color:#fff;
+	font-size:34px;
+	transition:.3s;
+	line-height: 66px;
+	transition: .5s ease-in-out;
+	animation: 1200ms ease 0s normal none 1 running shake;
+	animation-iteration-count: infinite;
+}
+.callback-bt:hover i, .callback-btw:hover i{
+	color:var(--cl);
+}
+@media(max-width:500px){
+	.callback-bt i, .callback-btw i{
+		font-size: 18px;
+		animation: none;
+   	}
+	.callback-bt:hover i, .callback-btw:hover i{
+		color:var(--wh);
+	}
+}
+
+.callback-bt span, .callback-btw span{
+	display: none;
+}
+@media(max-width:500px){
+	.callback-bt span, .callback-btw span{
+		display: inline-block;
+		font-size: 14px;
+		margin-left: 12px;
+		color: var(--wh);
+	}
+}
+
+
+
 
 
 

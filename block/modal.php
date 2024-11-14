@@ -1,10 +1,24 @@
 <? if ($site_set['cl_wh']): ?>
 	<!-- phone -->
-	<a target="_blank" href="https://wa.me/<?=$site['whatsapp']?>">
+	<!-- <a target="_blank" href="https://wa.me/<?=$site['whatsapp']?>">
 		<div type="button" class="callback-bt">
 		   <i class="fab fa-whatsapp"></i>
 		</div>
-	</a>
+	</a> -->
+	<div class="callback">
+		<a target="_blank" href="https://wa.me/<?=$site['whatsapp']?>?text=">
+			<div type="button" class="callback-btw">
+			   <i class="fab fa-whatsapp"></i>
+			   <span>Whatsapp</span>
+			</div>
+		</a>
+		<a target="_blank" href="tel:<?=$site['phone']?>">
+			<div type="button" class="callback-bt">
+			   <i class="fal fa-phone"></i>
+			   <span>Телефон</span>
+			</div>
+		</a>
+	</div>	
 <? endif ?>
 
 <!--  -->
