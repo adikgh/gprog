@@ -438,6 +438,26 @@ br.mobile{
 	background: var(--cl);
 }
 
+/*  */
+.btn_bl{
+	display: inline-block;
+	border-radius: 8px;
+	font-weight: 500;
+	color: var(--wh);
+	background: var(--bl);
+	box-shadow: none;
+	min-height: 0;
+	padding: 11.2px 16px;
+	font-size: 14px;
+	border: 2px var(--bl) solid;
+	text-transform: unset;
+}
+.btn_bl:hover{
+	color: var(--bl);
+	background: var(--wh);
+}
+
+/*  */
 .btn_red{
 	background: var(--red);
 	border-color: var(--red);

@@ -11,7 +11,7 @@
 ?>
 <? include "../block/header.php"; ?>
 
-	<div class="">
+	<div class="apps">
 		<!-- top -->
 		<div class="pack_b1">
 			<div class="bl_c">
@@ -258,10 +258,6 @@
 			</div>
 		</div>
 
-
-
-	
-
 		<!--  -->
 		<div class="">
 			<div class="bl_c">
@@ -296,9 +292,192 @@
 			</div>
 		</div>
 
-	
+		<!--  -->
+		<div class="">
+			<div class="bl_c">
+				<div class="head_c head_c2 txt_c">
+					<div class="head_c2_icon lazy_img" data-src="/assets/img/icons/hollow-red-circle_2b55.png"></div>
+					<h2 class="">Не останавливайтесь <br class="desktop"> только на разработке сайта</h2>
+					<p class="">Помимо разработки сайтов мы можем помочь с имидж-продакшеном <br class="desktop"> и последующим продвижением.</p>
+				</div>
+				<div class="blweb10_c">
+					<div class="blweb10_cn">
+						<div class="blweb10_ch">Дополнительная поддержка сайта</div>
+						<div class="blweb10_cc">
+							<span>Копирайтинг</span>
+							<span>Фотосессии команды и бизнеса</span>
+							<span>SEO-оптимизация</span>
+							<span>Съёмка видеороликов</span>
+							<span>Обслуживание сайта</span>
+							<span>Маркетинговое сопровождение</span>
+						</div>
+					</div>
+					<div class="blweb10_cn">
+						<div class="blweb10_ch">Последующее продвижение</div>
+						<div class="blweb10_cc">
+							<span>Контекстная реклама</span>
+							<span>Таргетированная реклама</span>
+							<span>Ссылочное продвижение</span>
+							<span>Работа с блогерами и лидерами мнений</span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+
+		<!-- blweb9 -->
+		<div class="bl_c blweb9">
+			<div class="blweb3">
+				<div class="blweb3_tx">Большая команда с многолетним опытом. С собственным офисом в двух городах и реальным штатом людей.</div>
+				<div class="blweb3_c">
+					<div class="blweb3_n">
+						<div>Команда менеджеров</div>
+						<p>4 человек</p>
+						<span></span>
+					</div>
+					<div class="blweb3_n">
+						<div>Команда дизайнеров и разработчиков</div>
+						<p>5 человек</p>
+						<span></span>
+					</div>
+					<div class="blweb3_n">
+						<div>Команда продакшн-группы</div>
+						<p>10 человек</p>
+						<span></span>
+					</div>
+					<div class="blweb3_n">
+						<div>Опыт разработки</div>
+						<p>6 лет</p>
+						<span></span>
+					</div>
+					<div class="blweb3_n">
+						<div>Разработали</div>
+						<p>100+ сайтов</p>
+						<span></span>
+					</div>
+					<div class="blweb3_n">
+						<div>Упаковали и продвинули</div>
+						<p>20+ бизнесов</p>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="bl_c">
+			<div class="blweb11">
+				<div class="head_c head_c2">
+					<h2 class="">Примерная <br class="desktop"> стоимость <br> разработки</h2>
+					<p class="">Мы можем вас сориентировать <br class="desktop"> по примерной стоимости разработки <br class="desktop"> сайта, но это будут лишь ориентиры, <br class="desktop"> конечную цену формируем только <br class="desktop"> после аудита вашего проекта.</p>
+				</div>
+				<div class="blweb11_r">
+					<div class="blweb11_rn pricing_block--yellow">
+						<div class="blweb11_rnh">Сайт на Tilda</div>
+						<div class="blweb11_rnt">90 000 ₸</div>
+						<ul class="blweb11_rl">
+							<li>Любой тип сайта</li>
+							<li>Индивидуальный дизайн</li>
+							<li>Подходит под рекламу</li>
+							<li>Ограничения в функционале</li>
+							<li>Без правок</li>
+						</ul>
+						<div class="blweb11_rn_btn">
+							<div class="btn btn_bl disb_zab">Оставить заявку</div>
+						</div>
+					</div>
+					<div class="blweb11_rn pricing_block--green">
+						<div class="blweb11_rnh">landing page</div>
+						<div class="blweb11_rnt">150 000 ₸</div>
+						<ul class="blweb11_rl">
+							<li>Возможна реализация с дополнительными страницами</li>
+							<li>Лучший вариант для рекламы товаров или услуг</li>
+							<li>Включена работа маркетолога</li>
+							<li>Ограничения в функционале</li>
+							<li>Можно сделать в один экран</li>
+						</ul>
+						<div class="blweb11_rf">
+							<div class="lazy_img" data-src="/assets/img/icons/wrapped-gift_1f381.png"></div>
+							<p>Месячная настройка таргет рекламы в подарок</p>
+						</div>
+						<div class="blweb11_rn_btn">
+							<div class="btn btn_bl disb_zab">Оставить заявку</div>
+						</div>
+					</div>
+					<div class="blweb11_rn pricing_block--blue">
+						<div class="blweb11_rnh">бизнес-сайт</div>
+						<div class="blweb11_rnt">250 000 ₸</div>
+						<ul class="blweb11_rl">
+							<li>Полноценный сайт с любым
+							количеством страниц</li>
+							<li>Любой функционал</li>
+							<li>Включена работа маркетолога</li>
+							<li>Включена SEO-оптимизация</li>
+							<li>Включён PageSpeed</li>
+							<li>С административной панелью</li>
+						</ul>
+						<div class="blweb11_rf">
+							<div class="lazy_img" data-src="/assets/img/icons/wrapped-gift_1f381.png"></div>
+							<p>Месячная настройка всех видов рекламы в подарок</p>
+						</div>
+						<div class="blweb11_rn_btn">
+							<div class="btn btn_bl disb_zab">Оставить заявку</div>
+						</div>
+					</div>
+					<div class="blweb11_rn pricing_block--pink">
+						<div class="blweb11_rnh">интернет-магазин</div>
+						<div class="blweb11_rnt">500 000 ₸</div>
+						<ul class="blweb11_rl">
+							<li>Подключение онлайн-оплаты на выбор, по умолчанию — CloudPayments</li>
+							<li>Корзина, избранное, отзывы, сравнения, обзор на 360°, пункты самовывоза и любой другой функционал</li>
+							<li>Отдельная адаптация под смартфоны</li>
+						</ul>
+						<div class="blweb11_rn_btn">
+							<div class="btn btn_bl disb_zab">Оставить заявку</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="">
+			<div class="bl_c">
+				<div class="head_c head_c2 txt_c">
+					<div class="head_c2_icon lazy_img" data-src="/assets/img/icons/our-clients-icon.webp"></div>
+					<h2 class="">Вы в хорошей компании</h2>
+					<p class="">У нас внушительный список партнёров, с которыми мы рука об руку <br class="desktop"> развиваемся в digital-пространстве. Одним из них можете стать и вы. </p>
+				</div>
+				<div class="blweb12_c">
+					<? $clients = db::query("select * from clients where logo is not null order by id asc limit 12"); ?>
+					<? while ($clients_d = mysqli_fetch_array($clients)): ?>
+						<div class="lazy_img" data-src="/assets/img/clients/<?=$clients_d['logo']?>"></div>
+					<? endwhile ?>
+				</div>
+			</div>
+		</div>
+
+
+		
+
 
 
 	</div>
 
 <? include "../block/footer.php"; ?>
+
+
+
+
+
+
+
+
+
+
+							<!-- <div class="blweb11_rf_bg">
+								<video class="video entered loaded" data-lazy="" data-src="/assets/video/tg-bg-video.mp4" type="video/mp4" muted="" loop="" playsinline="" autoplay="" data-ll-status="loaded" src="/assets/video/tg-bg-video.mp4">
+									<source data-src="/assets/video/tg-bg-video.mp4" src="/assets/video/tg-bg-video.mp4">
+								</video>
+							</div> -->
