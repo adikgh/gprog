@@ -9,8 +9,8 @@
 <meta name="theme-color" content="#12784A">
 
 <!-- icon -->
-<link rel="icon" href="/assets/img/logo/logo_br2_120.png" type="image/x-icon">
-<link rel="shortcut icon" type="image/icon" href="/assets/img/logo/logo_br2_120.png">
+<link rel="icon" href="/assets/img/logo/logo.png" type="image/x-icon">
+<link rel="shortcut icon" type="image/icon" href="/assets/img/logo/logo.png">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="<?=$site['name']?>" />
 <meta property="og:title" content="<?=$menu['title_'.$lang]?> | <?=$site['name']?>" />
 <meta property="og:description" content="<?=$menu['disc_'.$lang]?> <?=$site['phone_view']?>" />
-<meta property="og:image" content="/assets/img/logo/logo.jpg" />
+<meta property="og:image" content="/assets/img/logo/logo.png" />
 
 <!-- apple -->
 <meta name="application-name" lang="<?=$lang?>" content="<?=$site['site']?>">

@@ -63,21 +63,6 @@
 			</div>
 		</div>
 
-		<div class="bl_c">
-			<div class="blweb13_c">
-				<div class="blweb13_cb">
-					<video class="video entered loaded" data-lazy="" data-src="/assets/video/tg-bg-video.mp4" type="video/mp4" muted="" loop="" playsinline="" autoplay="" data-ll-status="loaded" src="/assets/video/tg-bg-video.mp4">
-						<source data-src="/assets/video/tg-bg-video.mp4" src="/assets/video/tg-bg-video.mp4">
-					</video>
-				</div>
-				<div class="">
-					<div class="">Получите доступ к закрытому телеграм-каналу про запуски брендов и стартапов</div>
-					<div class="">С кейсами, секретами продвижения и пошаговой инструкцией, что и как мы делали для каждого бренда</div>
-					<div class="btn">Получить подарок</div>
-					<div class=""></div>
-				</div>
-			</div>
-		</div>
 
 		<div class="bl_c">
 			<div class="blweb4">
@@ -481,3 +466,18 @@
 	</div>
 
 <? include "../block/footer.php"; ?>
+
+
+
+
+
+
+
+
+
+
+							<!-- <div class="blweb11_rf_bg">
+								<video class="video entered loaded" data-lazy="" data-src="/assets/video/tg-bg-video.mp4" type="video/mp4" muted="" loop="" playsinline="" autoplay="" data-ll-status="loaded" src="/assets/video/tg-bg-video.mp4">
+									<source data-src="/assets/video/tg-bg-video.mp4" src="/assets/video/tg-bg-video.mp4">
+								</video>
+							</div> -->
