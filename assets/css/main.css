@@ -369,6 +369,19 @@
 	-webkit-box-shadow: 4px 10px 84px rgb(0 0 0 / 5%);
    box-shadow: 4px 10px 84px rgb(0 0 0 / 5%);
 }
+
+.menu_cn3{
+	padding: 0;
+    width: auto;
+    background: none;
+    margin: 0;
+    /* width: 220px; */
+	box-shadow: none;
+	border-radius: 0;
+	justify-content: flex-end;
+}
+
+
 .menu_cn2 .menu_cim{
 	width: 42px;
 	height: 42px;
@@ -391,6 +404,10 @@
 .menu_cizt{
 	position: relative;
 	width: calc(100% - 42px - 34px - 30px);
+}
+.menu_cn3 .menu_cizt{
+	width: auto;
+	margin-right: 12px;
 }
 .menu_cizt span{
 	position: relative;

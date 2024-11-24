@@ -183,4 +183,37 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
+
+	$('.blweb11_r0i').click(function(){
+		if (!$(this).hasClass('blweb11_r0i_active') && $(this).attr('data-id') == '1') {
+			$('.blweb11_rn').addClass('dsp_n');
+			$('.act_bl1').removeClass('dsp_n');
+			$('.blweb11_r0i').removeClass('blweb11_r0i_active');
+			$(this).addClass('blweb11_r0i_active');
+		} else if (!$(this).hasClass('blweb11_r0i_active') && $(this).attr('data-id') == '2') {
+			$('.blweb11_rn').addClass('dsp_n');
+			$('.act_bl2').removeClass('dsp_n');
+			$('.blweb11_r0i').removeClass('blweb11_r0i_active');
+			$(this).addClass('blweb11_r0i_active');
+		} else if (!$(this).hasClass('blweb11_r0i_active') && $(this).attr('data-id') == '3') {
+			$('.blweb11_rn').addClass('dsp_n');
+			$('.act_bl3').removeClass('dsp_n');
+			$('.blweb11_r0i').removeClass('blweb11_r0i_active');
+			$(this).addClass('blweb11_r0i_active');
+		}
+	})
+	
+
+
+
+
+
+
+
 })

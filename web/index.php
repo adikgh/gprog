@@ -63,7 +63,7 @@
 			</div>
 		</div>
 
-		<!-- <div class="bl_c">
+		<div class="bl_c">
 			<div class="blweb13_c">
 				<div class="blweb13_cb">
 					<video class="video entered loaded" data-lazy="" data-src="/assets/video/tg-bg-video.mp4" type="video/mp4" muted="" loop="" playsinline="" autoplay="" data-ll-status="loaded" src="/assets/video/tg-bg-video.mp4">
@@ -77,7 +77,7 @@
 					<div class=""></div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 		<div class="bl_c">
 			<div class="blweb4">
