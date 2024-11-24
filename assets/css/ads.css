@@ -31,7 +31,12 @@ body{
 .pack_b1_l{
 	width: 100%;
 }
-
+@media (max-width: 768px) {
+	.pack_b1{
+		min-height: auto;
+		max-height: auto;
+	}
+}
 
 
 
@@ -54,9 +59,10 @@ body{
 		text-align: center;
 	}
 }
-@media(max-width:500px){.pack_b1_h{font-size:32px}}
-@media(max-width:375px){.pack_b1_h{font-size:26px}}
-@media(max-width:320px){.pack_b1_h{font-size:24px}}
+@media(max-width:500px){.pack_b1_h{font-size:20px}}
+@media(max-width:390px){.pack_b1_h{font-size:18px}}
+@media(max-width:375px){.pack_b1_h{font-size:16px}}
+@media(max-width:320px){.pack_b1_h{font-size:14px}}
 
 
 
